@@ -1,12 +1,10 @@
 #include<iostream>
 using namespace std;
-int main(){
-    float x;
+int main()
+   { int x;
     cin>>x;
-    int y=(int)x;
-    if(y<0) y=y-1;
-    float z=(float)y;
-    cout<<x-z;
-    return 0;
     
-}
+
+    x>33 ? cout<<"pass" : cout<<"fail";
+    return 0;
+   }
