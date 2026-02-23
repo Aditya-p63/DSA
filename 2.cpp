@@ -1,12 +1,32 @@
 #include<iostream>
 using namespace std;
 int main(){
-    float x;                                                    
-    cout<<"enter a float number"<<endl;
+    int x;
     cin>>x;
-    int y=(int)x;
-    if(y<0) y=y-1;
-    float z=x-y;
-    cout<<z;
-    return 0;
+    switch (x){
+        case 1 :
+        cout<<"monday";
+        break;
+         case 2 :
+        cout<<"tuesday";
+        break;
+         case 3 :
+        cout<<"wednesday";
+        break;
+         case 4 :
+        cout<<"thrusday";
+        break;
+         case 5 :
+        cout<<"friday";
+        break;
+         case 6 :
+        cout<<"saturday";
+        break;
+         case 7 :
+        cout<<"sunday";
+        break;
+        default : cout<<"invalid";
+
+    }
+    
 }
