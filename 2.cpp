@@ -1,17 +1,22 @@
 #include<iostream>
-using namespace  std;
+using namespace std;
+class bike{
+    public: 
+    int tyresize;
+    int enginesize;
+    bike(int tyresize,int enginesize){
+        this->tyresize=tyresize;
+        this->enginesize=enginesize;
+    }
+
+};
 int main(){
-    int n;
-    cin>>n;
-    int arr[n];
-    for(int i=0;i<n;i++){
-        cin>>arr[i];
-    }
-    int max=arr[0];
-    //cin>>x;
-    for(int i=1;i<n;i++){
-      //  sum=sum+arr[i];
-      if(max<arr[i]) max=arr[i];
-    }
- cout<<max;
+    bike tvs(12,100);
+    bike honda(12,100);
+    bike maruti(12,100);
+    bike royal(12,100);
+    cout<<tvs.tyresize<<" "<<tvs.enginesize<<endl;
+    cout<<honda.tyresize<<" "<<honda.enginesize<<endl;
+    cout<<maruti.tyresize<<" "<<maruti.enginesize<<endl;
+    cout<<royal.tyresize<<" "<<royal.enginesize<<endl;
 }
